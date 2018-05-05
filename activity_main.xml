@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.udacity.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backgroundimage"
+        />
+
+    <ImageView
+        android:id="@+id/business_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/businessimage"
+        android:layout_above="@id/hoursheader"
+        android:layout_below="@id/background_image"
+        />
+
+    <TextView
+        android:id="@+id/businessname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/business_image"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:text="XY Travel Agency"
+        />
+
+    <TextView
+        android:id="@+id/contactheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:text="Contact info"
+        />
+
+    <TextView
+        android:id="@+id/contactdescription1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactheader"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:text="Email:"
+        />
+
+    <TextView
+        android:id="@+id/contactdescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactdescription1"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:text="Phone number:"
+        />
+
+    <TextView
+        android:id="@+id/contactdescription3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactdescription2"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:text="Website:"
+        />
+
+    <TextView
+        android:id="@+id/addressheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactdescription3"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:text="Address"
+        />
+
+    <TextView
+        android:id="@+id/addressdescription1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressheader"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/black"
+        android:text="Address line 1"
+        />
+
+    <TextView
+        android:id="@+id/addressdescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressdescription1"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="android:color/black"
+        android:text="Address line 2"
+        />
+
+    <TextView
+        android:id="@+id/addressdescription3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressdescription2"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="android:color/black"
+        android:text="Address line 3"
+        />
+
+
+    <TextView
+        android:id="@+id/hoursheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/hoursdescription1"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="android:color/black"
+        android:text="Hours"
+        />
+
+    <TextView
+        android:id="@+id/hoursdescription1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/hoursdescription2"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="android:color/black"
+        android:text="Mon-Fri : 9am to 5pm"
+        />
+
+    <TextView
+        android:id="@+id/hoursdescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/hoursdescription3"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="android:color/black"
+        android:text="Sat : 11am to 5pm"
+        />
+
+    <TextView
+        android:id="@+id/hoursdescription3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="android:color/black"
+        android:text="Sun/Holidays : Closed"
+        />
+
+
+    <TextView
+        android:id="@+id/descriptionheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressdescription3"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="android:color/black"
+        android:text="Description "
+        />
+
+    <TextView
+        android:id="@+id/description1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionheader"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="android:color/black"
+        android:text="Description line 1 "
+        />
+
+    <TextView
+        android:id="@+id/description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description1"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="android:color/black"
+        android:text="Description line 2 "
+        />
+
+
+
+
+
+
+</RelativeLayout>
